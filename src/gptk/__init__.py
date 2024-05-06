@@ -20,11 +20,6 @@ try:
 except ImportError:
     from gptk.singletons import *
 
-#try:
-#    from .datamodels import *
-#except ImportError:
-#    from gptk.datamodels import *
-
 try:
     from .enums import *
 except ImportError:
