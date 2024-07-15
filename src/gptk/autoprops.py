@@ -203,8 +203,8 @@ class Property(property):
             raise AttributeError('This attribute is illegible.')
         if self.fagetter is not None:
             self.fagetter(obj)
-        if self.fpgtter is not None:
-            return self.fpgtter(self.fget(obj))
+        if self.fpgetter is not None:
+            return self.fpgetter(self.fget(obj))
         return self.fget(obj)
 
     def default_getter(self, obj: Any) -> ValidValue:
@@ -338,9 +338,9 @@ class Property(property):
         self.gen__doc__()
         return self
     
-    def postgettter(self, fpgtter: Callable[[Any], Any]) -> 'Property':
+    def postgettter(self, fpgetter: Callable[[Any], Any]) -> 'Property':
         '''Decorator to set the postgetter.'''
-        self.fpgtter = fpgtter
+        self.fpgetter = fpgetter
         self.gen__doc__()
         return self
         
