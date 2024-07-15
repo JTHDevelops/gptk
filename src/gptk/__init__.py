@@ -6,9 +6,10 @@ import os
 from pathlib import Path
 from auto_all import start_all, end_all, public
 
-from pint import UnitRegistry as UR
 
 start_all()
+
+from pint import UnitRegistry as UR
 
 try:
     from .encoding import *
