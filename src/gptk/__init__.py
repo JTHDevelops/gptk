@@ -9,8 +9,6 @@ from auto_all import start_all, end_all, public
 
 start_all()
 
-from pint import UnitRegistry as UR
-
 try:
     from .encoding import *
 except ImportError:
