@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gptk"
-version = "0.3.20"
+version = "0.3.22"
 authors = [
   { name="J.T. Hartzfeld", email="J.T.Hartzfeld@jthdevelops.com" },
 ]
@@ -14,7 +14,8 @@ requires-python = ">=3.11"
 dependencies = [
   "auto_all >= 1.4.1", 
   "platformdirs >= 4.2.0", 
-  "pint >= 0.23"
+  "pint >= 0.23",
+  "PropertyPlus >= 1.0.2"
 ]
 classifiers = [
   "Programming Language :: Python :: 3",
