@@ -4,11 +4,12 @@
 '''
 import os
 from pathlib import Path
-from auto_all import start_all, end_all, public
+from auto_all import start_all, end_all
 
 
 start_all()
 
+from propertyplus import *
 
 try:
     from .encoding import *
@@ -25,9 +26,4 @@ try:
 except ImportError:
     from gptk.enums import *
 
-try:
-    from .autoprops import *
-except ImportError:
-    from gptk.autoprops import *
-    
 end_all()
